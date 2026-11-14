@@ -119,3 +119,9 @@ git add backend/src/modules/notifications
 git commit -m "feat(notifications): tambah EmailStrategy"
 git push -u origin feature/notifications
 ```
+**Perintah migrate:**
+| Perintah | Fungsi |
+|---|---|
+| `npm run db:migrate` | Buat DB (jika belum ada) + jalankan migration yang belum tercatat |
+| `npm run db:migrate:undo` | Batalkan migration terakhir |
+| `npm run db:migrate:undo:all` | Kembalikan schema kosong |
